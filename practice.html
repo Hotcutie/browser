@@ -2,6 +2,12 @@
 
 <head>
     <title>Money Bank rewind</title>
+    <script>
+        function autoRefresh() {
+            window.location = window.location.href;
+        }
+        setInterval('autoRefresh()', 2000);
+    </script>
 </head>
 
 <body>
@@ -17,7 +23,6 @@
                 <label for="inputAmount">Amount</label>
                 <input type="number" class="form-control" id="inputAmount" name="amount" required minlength="2" maxlength="8" size="10"value="1000">
               </div>
-                window.location.reload();
             </div>
             <button type="submit" class="btn btn-primary">Send the Money!</button>
           </form>
