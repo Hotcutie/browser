@@ -3,8 +3,8 @@
 <head>
     <title>Money Bank rewind</title>
     <script>
-        function autoRefresh() {
-            window.location = window.location.href;
+        function submitform() {
+            window.location =  document.myform.submit();
         }
         setInterval('autoRefresh()', 3000);
     </script>
@@ -25,6 +25,7 @@
               </div>
             </div>
             <button type="submit" class="btn btn-primary">Send the Money!</button>
+            <a href="javascript: submitform()">
           </form>
 
     </div>
