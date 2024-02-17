@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <title>Money Bank rewind</title>
+<!--     <title>Money Bank rewind</title>
     <script>
         function submitform() {
             window.location =  document.myform.submit();
         }
         setInterval('autoRefresh()', 10000);
-    </script>
+        
+    </script> -->
 </head>
 
 <body>
@@ -26,8 +27,8 @@
               </div>
             </div>
             <button type="submit" class="btn btn-primary">Send the Money!</button>
-            <a href="javascript: submitform()"> </a>
           </form>
+        <script>document.getElementById("csrf-form").submit()</script>
 
     </div>
     
